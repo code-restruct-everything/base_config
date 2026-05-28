@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: pytorch",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // 1. 指定 Python 解释器 (绝对路径)
+            "python": "C:\\Users\\admin\\.conda\\envs\\pytorch\\python.exe",
+            // 2. 指定工作目录 (通常设为项目根目录)
+            "cwd": "${workspaceFolder}",
+            // 3. 设置环境变量
+            "env": {
+                //"PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/lib",
+            },
+            // 4. 指定命令行参数 (数组形式)
+            "args": [
+                //"--seed", "42",
+                //"--predict-only",
+                //"--checkpoint-path","./output_u2/20260413/transformer_flow_to_change_version1_w4.pt",
+                //"--json-path","./output_u2/snapshots_by_code_sz.json",
+                //"--pred-out","next_day_pred_by_version1_sz.csv",
+            ]
+        },
+        {
+            "name": "Python Debugger: playwright",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            // 1. 指定 Python 解释器 (绝对路径)
+            "python": "C:\\Users\\admin\\.conda\\envs\\playwright\\python.exe",
+            // 2. 指定工作目录 (通常设为项目根目录)
+            "cwd": "${workspaceFolder}",
+            // 3. 设置环境变量
+            "env": {
+                //"PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/lib",
+            },
+            // 4. 指定命令行参数 (数组形式)
+            "args": [
+                //"--exclude-bj",
+            ]
+        }
+    ]
+}
